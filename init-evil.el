@@ -4,7 +4,6 @@
 (setq evil-search-module 'evil-search)
 (setq evil-magic 'very-magic)
 
-(setq evil-want-C-u-scroll t)
 (setq evil-want-C-w-in-emacs-state t)
 (setq evil-want-fine-undo 'no)
 (setq evil-shift-width 2)
