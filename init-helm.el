@@ -13,11 +13,8 @@
 (setq helm-buffers-fuzzy-matching t)
 (setq projectile-completion-system 'helm)
 (setq projectile-require-project-root nil)
-(setq projectile-globally-ignored-directories
-      (append projectile-globally-ignored-directories '(".git"
-                                                        ".svn"
-                                                        "target"
-														)))
+
+(add-to-list 'projectile-globally-ignored-directories "target")
 
 (global-set-key (kbd "M-x") 'helm-M-x)
 (define-key helm-map [esc] 'helm-keyboard-quit)
