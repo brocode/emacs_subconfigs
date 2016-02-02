@@ -1,3 +1,4 @@
+(require 'init-sensible)
 (require 'init-auto-complete)
 (require 'init-ensime)
 (require 'init-evil)
