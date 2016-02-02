@@ -42,6 +42,13 @@
 (define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
 (define-key evil-normal-state-map (kbd "SPC SPC") 'helm-M-x)
 
+;move between buffers
+(define-key evil-normal-state-map (kbd "] b") 'next-buffer)
+(define-key evil-normal-state-map (kbd "[ b") 'previous-buffer)
+
+;move in wraps
+(define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
+(define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
 
 
 (provide 'init-evil)
