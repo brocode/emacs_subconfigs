@@ -13,5 +13,6 @@
 (require 'init-powerline)
 (require 'init-theme)
 (require 'init-undo-tree)
+(require 'init-ediff)
 
 (provide 'init-subconfigs)
