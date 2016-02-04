@@ -12,4 +12,4 @@ Version 2015-06-11"
             'face (list :background (match-string-no-properties 0)))))))
       (font-lock-fontify-buffer))
 
-(provide 'custom-functions)
+(provide 'init-custom-functions)
