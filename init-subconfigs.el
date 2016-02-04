@@ -16,5 +16,6 @@
 (require 'init-ediff)
 (require 'init-dired)
 (require 'init-less)
+(require 'init-custom-functions)
 
 (provide 'init-subconfigs)
