@@ -15,5 +15,6 @@
 (require 'init-undo-tree)
 (require 'init-ediff)
 (require 'init-dired)
+(require 'init-less)
 
 (provide 'init-subconfigs)
