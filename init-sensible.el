@@ -78,6 +78,8 @@
 ;always follow symlinks
 (setq vc-follow-symlinks t)
 
+;replace "yes or no" prompts with "y or n"
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ; 2 line indent
 (setq-default tab-width 2 indent-tabs-mode nil)
