@@ -13,6 +13,7 @@
  '(spaceline-evil-normal ((t (:background "#00cd00" :foreground "#FFFFFF" :inherit (quote mode-line)))))
  '(spaceline-evil-visual ((t (:background "#ffaf00" :foreground "#FFFFFF" :inherit (quote mode-line)))))
  '(spaceline-evil-emacs ((t (:background "#af00d7" :foreground "#FFFFFF" :inherit (quote mode-line)))))
+ '(spaceline-evil-motion ((t (:background "#9400D3" :foreground "#FFFFFF" :inherit (quote mode-line)))))
  '(spaceline-evil-replace ((t (:background "#5f97ff" :foreground "#FFFFFF" :inherit (quote mode-line)))))
  '(powerline-inactive2 ((t (:inherit mode-line-inactive :background "#e5e5e5")))))
 
