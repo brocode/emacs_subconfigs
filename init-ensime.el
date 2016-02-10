@@ -32,8 +32,9 @@
 (evil-define-key 'normal ensime-refactor-info-map (kbd "q") (lambda()(interactive)
                             (funcall cancel-refactor)
                             (ensime-popup-buffer-quit-function)
-                                                           ))
+                            ))
 
+(evil-define-key 'normal ensime-inspector-mode-map (kbd "q") 'ensime-popup-buffer-quit-function)
 
 
 
