@@ -25,6 +25,15 @@
 (evil-define-key 'normal evil-jumper-mode-map (kbd "C-M-h") 'evil-jump-backward)
 (evil-define-key 'normal evil-jumper-mode-map (kbd "C-M-l") 'evil-jump-forward)
 
+(evil-define-key 'normal ensime-refactor-info-map (kbd "c") (lambda()(interactive)
+                            (funcall continue-refactor)
+                            (ensime-popup-buffer-quit-function)
+                            ))
+(evil-define-key 'normal ensime-refactor-info-map (kbd "q") (lambda()(interactive)
+                            (funcall cancel-refactor)
+                            (ensime-popup-buffer-quit-function)
+                                                           ))
+
 
 
 
