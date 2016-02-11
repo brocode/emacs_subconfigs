@@ -17,5 +17,6 @@
 (require 'init-dired)
 (require 'init-less)
 (require 'init-custom-functions)
+(require 'init-string-inflection)
 
 (provide 'init-subconfigs)
