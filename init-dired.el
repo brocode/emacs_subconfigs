@@ -2,6 +2,8 @@
 
 (evil-define-key 'normal dired-mode-map "k" 'dired-previous-line)
 (evil-define-key 'normal dired-mode-map "j" 'dired-next-line)
+(evil-define-key 'normal dired-mode-map "l" 'dired-find-file)
+(evil-define-key 'normal dired-mode-map "h" 'dired-up-directory)
 
 (evil-define-key 'normal dired-mode-map (kbd "C-j") 'dired-next-subdir)
 (evil-define-key 'normal dired-mode-map (kbd "C-k") 'dired-prev-subdir)
