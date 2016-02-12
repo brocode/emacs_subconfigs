@@ -6,9 +6,4 @@
 (define-key ac-completing-map (kbd "C-n") 'ac-next)
 (define-key ac-completing-map (kbd "C-p") 'ac-previous)
 
-(defadvice auto-complete-mode (around disable-auto-complete-for-scala)
-  (unless (eq major-mode 'scala-mode) ad-do-it))
-
-(ad-activate 'auto-complete-mode)
-
 (provide 'init-auto-complete)
