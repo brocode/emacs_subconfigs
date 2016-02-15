@@ -16,6 +16,9 @@
 
 (add-to-list 'projectile-globally-ignored-directories "target")
 
+; without this projectile will try to run svn list to find project files
+(setq projectile-svn-command "find . -type f -print0")
+
 (global-set-key (kbd "M-x") 'helm-M-x)
 (define-key helm-map [esc] 'helm-keyboard-quit)
 
