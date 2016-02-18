@@ -84,4 +84,6 @@
 ; 2 line indent
 (setq-default tab-width 2 indent-tabs-mode nil)
 
+(setq x-select-enable-clipboard nil)
+
 (provide 'init-sensible)
