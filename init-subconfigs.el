@@ -18,5 +18,6 @@
 (require 'init-less)
 (require 'init-custom-functions)
 (require 'init-string-inflection)
+(require 'init-evil-unimpaired)
 
 (provide 'init-subconfigs)
