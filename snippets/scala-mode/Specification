@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Specification
+# key: spec
+# --
+class $1 extends Specification {
+
+  "A $2" should {
+    "$3" in {
+      $0
+    }
+  }
+}
