@@ -2,6 +2,7 @@
 (require 'init-evil)
 (require 'init-sensible)
 (require 'init-auto-complete)
+(require 'init-yasnippet)
 (require 'init-ensime)
 (require 'init-helm)
 (require 'init-javascript)
