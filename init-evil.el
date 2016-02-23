@@ -86,5 +86,11 @@
   "l" 'evil-forward-char
 )
 
+; shells
+(evil-define-key 'insert comint-mode-map (kbd "C-p") 'comint-previous-input)
+(evil-define-key 'insert comint-mode-map (kbd "C-n") 'comint-next-input)
+(evil-define-key 'insert inferior-emacs-lisp-mode-map (kbd "C-p") 'comint-previous-input)
+(evil-define-key 'insert inferior-emacs-lisp-mode-map (kbd "C-n") 'comint-next-input)
+
 (provide 'init-evil)
 
