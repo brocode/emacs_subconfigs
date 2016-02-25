@@ -20,5 +20,6 @@
 (require 'init-custom-functions)
 (require 'init-string-inflection)
 (require 'init-evil-unimpaired)
+(require 'init-org-mode)
 
 (provide 'init-subconfigs)
