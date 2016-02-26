@@ -1,3 +1,7 @@
+; syntax highlightning in org mode snippets
+(setq org-src-fontify-natively t)
+
+
 (evil-define-key 'normal org-mode-map (kbd "M-k") 'org-metaup)
 (evil-define-key 'normal org-mode-map (kbd "M-j") 'org-metadown)
 (evil-define-key 'normal org-mode-map (kbd "M-h") 'org-metaleft)
