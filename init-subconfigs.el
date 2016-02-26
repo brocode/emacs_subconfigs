@@ -21,5 +21,6 @@
 (require 'init-string-inflection)
 (require 'init-evil-unimpaired)
 (require 'init-org-mode)
+(require 'init-play-routes-mode)
 
 (provide 'init-subconfigs)
