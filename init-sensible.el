@@ -86,4 +86,7 @@
 
 (setq x-select-enable-clipboard nil)
 
+; save buffer on focus loss
+(add-hook 'focus-out-hook 'save-buffer)
+
 (provide 'init-sensible)
