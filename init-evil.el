@@ -31,14 +31,8 @@
 (require-package 'evil-magit)
 (require 'evil-magit)
 
-(require-package 'evil-jumper)
-(require 'evil-jumper)
-
 (require-package 'evil-multiedit)
 (require 'evil-multiedit)
-
-(global-evil-jumper-mode 1)
-
 
 ;; indent on ret
 (define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
