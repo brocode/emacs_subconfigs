@@ -1,6 +1,14 @@
 ; syntax highlightning in org mode snippets
 (setq org-src-fontify-natively t)
 
+; org-latex-listings: nil means the default verbatim block export,
+; 'minted means the minted package and any non-nil value other
+; than 'minted means the listings package.
+(setq org-latex-listings t)
+(setq org-export-latex-listings t)
+
+(require 'ox-latex)
+(add-to-list 'org-latex-packages-alist '("" "listings"))
 
 (evil-define-key 'normal org-mode-map (kbd "M-k") 'org-metaup)
 (evil-define-key 'normal org-mode-map (kbd "M-j") 'org-metadown)
