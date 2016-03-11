@@ -15,6 +15,7 @@
 (setq projectile-require-project-root nil)
 
 (add-to-list 'projectile-globally-ignored-directories "target")
+(add-to-list 'projectile-globally-ignored-directories ".ensime_cache")
 
 ; without this projectile will try to run svn list to find project files
 (setq projectile-svn-command "find . -type f -print0")
