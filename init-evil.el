@@ -1,7 +1,10 @@
 (require-package 'evil)
 
 (setq evil-want-C-i-jump nil) ; org mode tab fix
-(setq evil-search-module 'evil-search)
+
+; default is isearch. evil-seatch persists highlights on movements
+;(setq evil-search-module 'evil-search)
+
 (setq evil-magic 'very-magic)
 
 (setq evil-want-C-w-in-emacs-state t)
