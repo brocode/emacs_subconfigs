@@ -23,5 +23,6 @@
 (require 'init-org-mode)
 (require 'init-play-routes-mode)
 (require 'init-paradox)
+(require 'init-yaml)
 
 (provide 'init-subconfigs)
