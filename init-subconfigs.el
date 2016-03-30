@@ -24,5 +24,6 @@
 (require 'init-play-routes-mode)
 (require 'init-paradox)
 (require 'init-yaml)
+(require 'init-flycheck)
 
 (provide 'init-subconfigs)
