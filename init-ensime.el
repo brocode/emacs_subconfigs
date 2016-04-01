@@ -38,6 +38,12 @@
 (evil-define-key 'normal ensime-inspector-mode-map (kbd "q") 'ensime-popup-buffer-quit-function)
 
 
+(evil-define-key 'insert ensime-search-mode-map (kbd "C-n") 'ensime-search-next-match)
+(evil-define-key 'insert ensime-search-mode-map (kbd "C-p") 'ensime-search-prev-match)
+(evil-define-key 'insert ensime-search-mode-map (kbd "RET") 'ensime-search-choose-current-result)
+(evil-define-key 'insert ensime-search-mode-map (kbd "M-i") 'ensime-search-insert-import-of-current-result)
+
+
 (setq ensime-completion-style 'auto-complete)
 
 (provide 'init-ensime)
