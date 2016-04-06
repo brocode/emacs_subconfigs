@@ -25,5 +25,6 @@
 (require 'init-paradox)
 (require 'init-yaml)
 (require 'init-flycheck)
+(require 'init-restclient)
 
 (provide 'init-subconfigs)
