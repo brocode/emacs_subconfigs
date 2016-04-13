@@ -4,6 +4,8 @@
 (require-package 'projectile)
 (require-package 'helm-projectile)
 
+(setq helm-buffer-max-length 40)
+
 (require 'helm-config)
 (require 'helm-misc)
 (require 'helm-projectile)
