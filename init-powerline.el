@@ -1,4 +1,5 @@
 (require-package 'spaceline)
+(require-package 'diminish)
 (require 'spaceline-config)
 (spaceline-spacemacs-theme)
 
@@ -16,5 +17,22 @@
  '(spaceline-evil-motion ((t (:background "#9400D3" :foreground "#FFFFFF" :inherit (quote mode-line)))))
  '(spaceline-evil-replace ((t (:background "#5f97ff" :foreground "#FFFFFF" :inherit (quote mode-line)))))
  '(powerline-inactive2 ((t (:inherit mode-line-inactive :background "#e5e5e5")))))
+
+(require 'diminish)
+(diminish 'visual-line-mode)
+(diminish 'autopair-mode)
+(diminish 'undo-tree-mode)
+(diminish 'auto-complete-mode)
+(diminish 'yas-minor-mode)
+(diminish 'guide-key-mode)
+(diminish 'eldoc-mode)
+(diminish 'smartparens-mode)
+(diminish 'company-mode)
+(diminish 'elisp-slime-nav-mode)
+(diminish 'git-gutter+-mode)
+(diminish 'magit-auto-revert-mode)
+(diminish 'hs-minor-mode)
+(diminish 'color-identifiers-mode)
+(diminish 'helm-mode)
 
 (provide 'init-powerline)

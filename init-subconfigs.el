@@ -1,4 +1,5 @@
 (require 'init-packages)
+(require 'init-custom-functions)
 (require 'init-evil)
 (require 'init-sensible)
 (require 'init-auto-complete)
@@ -17,7 +18,6 @@
 (require 'init-ediff)
 (require 'init-dired)
 (require 'init-less)
-(require 'init-custom-functions)
 (require 'init-string-inflection)
 (require 'init-evil-unimpaired)
 (require 'init-org-mode)
