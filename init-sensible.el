@@ -102,4 +102,8 @@
     ))
 (add-hook 'find-file-hook 'check-large-file-hook)
 
+; show trailing whitespace
+(add-hook 'prog-mode-hook (lambda () (setq show-trailing-whitespace t)))
+(add-hook 'conf-mode-hook (lambda () (setq show-trailing-whitespace t)))
+
 (provide 'init-sensible)
