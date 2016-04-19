@@ -11,7 +11,6 @@
 (require 'init-linum)
 (require 'init-magit)
 (require 'init-markdown)
-(require 'init-neotree)
 (require 'init-powerline)
 (require 'init-theme)
 (require 'init-undo-tree)
