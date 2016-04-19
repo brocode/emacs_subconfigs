@@ -31,6 +31,7 @@
 (diminish 'elisp-slime-nav-mode)
 (diminish 'git-gutter+-mode)
 (diminish 'magit-auto-revert-mode)
+(diminish 'auto-revert-mode)
 (diminish 'hs-minor-mode)
 (diminish 'color-identifiers-mode)
 (diminish 'helm-mode)
