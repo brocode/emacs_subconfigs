@@ -25,5 +25,6 @@
 (require 'init-yaml)
 (require 'init-flycheck)
 (require 'init-restclient)
+(require 'init-dockerfile-mode)
 
 (provide 'init-subconfigs)
