@@ -1,4 +1,6 @@
 (require 'evil)
+(require-package 'move-text)
+(require 'move-text)
 
 (defun evil-unimpaired//find-relative-filename (offset)
   (when buffer-file-name
