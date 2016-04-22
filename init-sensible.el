@@ -94,15 +94,16 @@
 ; increase performance for large files
 (defun check-large-file-hook ()
   "If a file is over a given size, turn off minor modes"
-  (when (> (buffer-size) (* 1024 1024)) ;; 1 MB
-    (fundamental-mode)
-    (font-lock-mode -1)
-    (linum-mode -1)
-    ;(setq buffer-read-only t)
-    ;(buffer-disable-undo)
+  (if (> (buffer-size) (* 1024 1024)) ;; 1 MB
+      (
+       (fundamental-mode)
+       (font-lock-mode -1)
+       (linum-mode -1)
+       ;(setq buffer-read-only t)
+       ;(buffer-disable-undo)
     )
-  (when (> (count-lines (point-min) (point-max)) 1500) (linum-mode -1))
-  )
+    (when (> (count-lines (point-min) (point-max)) 1500) (linum-mode -1))
+  ))
 (add-hook 'find-file-hook 'check-large-file-hook)
 
 ; show trailing whitespace
