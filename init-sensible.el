@@ -95,7 +95,7 @@
 (defun check-large-file-hook ()
   "If a file is over a given size, turn off minor modes"
   (if (> (buffer-size) (* 1024 1024)) ;; 1 MB
-      (
+      (progn
        (fundamental-mode)
        (font-lock-mode -1)
        (linum-mode -1)
