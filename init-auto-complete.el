@@ -1,11 +1,14 @@
 (use-package auto-complete
   :ensure t
   :diminish auto-complete-mode
-  :config
-  (define-key ac-completing-map "\r" nil)
-  (define-key ac-completing-map (kbd "C-n") 'ac-next)
-  (define-key ac-completing-map (kbd "C-p") 'ac-previous)
+  :init
   (ac-config-default)
-)
+  :bind (
+         :map ac-completing-map
+              ("\r" . nil)
+              ("C-n" . ac-next)
+              ("C-p" . ac-previous)
+              )
+  )
 
 (provide 'init-auto-complete)
