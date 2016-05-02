@@ -18,30 +18,33 @@
 (use-package helm
   :ensure t
   :diminish helm-mode
+  :bind (("M-x" . helm-M-x)
+         :map helm-map
+         ([esc] . helm-keyboard-quit)
+         ("C-w" . backward-kill-word)
+         :map helm-grep-map
+         ("C-w" . backward-kill-word))
   :config
   (require 'helm-grep)
-  (define-key helm-grep-map (kbd "C-w") 'backward-kill-word)
   (setq helm-quick-update t)
   (setq helm-bookmark-show-location t)
   (setq helm-buffers-fuzzy-matching t)
   (setq projectile-completion-system 'helm)
   (setq helm-buffer-max-length 40)
-  (global-set-key (kbd "M-x") 'helm-M-x)
-  (define-key helm-map [esc] 'helm-keyboard-quit)
 
-  (helm-mode 1)
-
-  (helm-projectile-on))
+  (helm-mode 1))
 
 (use-package helm-projectile
   :ensure t
-  :after helm projectile)
+  :after helm projectile
+  :config
+  (helm-projectile-on))
+
 (use-package helm-unicode
   :ensure t
   :defer t
   :after helm
-  :config
-  (global-set-key (kbd "C-c i 8") 'helm-unicode))
+  :bind (("C-c i 8" . helm-unicode)))
 
 
 (provide 'init-helm)

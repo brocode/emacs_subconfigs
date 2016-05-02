@@ -4,12 +4,11 @@
 (package-initialize)
 
 (defun require-package (package)
-    (setq-default highlight-tabs t)
-    "Install given PACKAGE."
-    (unless (package-installed-p package)
-        (unless (assoc package package-archive-contents)
-            (package-refresh-contents))
-        (package-install package)))
+  "Install given PACKAGE."
+  (unless (package-installed-p package)
+    (unless (assoc package package-archive-contents)
+      (package-refresh-contents))
+    (package-install package)))
 
 
 (require-package 'use-package)
