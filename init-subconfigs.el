@@ -26,5 +26,6 @@
 (require 'init-flycheck)
 (require 'init-restclient)
 (require 'init-dockerfile-mode)
+(require 'init-rainbow-mode)
 
 (provide 'init-subconfigs)
