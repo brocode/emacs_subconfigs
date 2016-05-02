@@ -1,6 +1,6 @@
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                         ("org" . "http://orgmode.org/elpa/")
-                        ("melpa" . "http://melpa.milkbox.net/packages/")))
+                        ("melpa" . "http://melpa.org/packages/")))
 (package-initialize)
 
 (defun require-package (package)
