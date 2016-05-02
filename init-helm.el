@@ -3,6 +3,7 @@
 (require-package 'helm)
 (require-package 'projectile)
 (require-package 'helm-projectile)
+(require-package 'helm-unicode)
 
 (setq helm-buffer-max-length 40)
 
@@ -23,6 +24,7 @@
 (setq projectile-svn-command "find . -type f -print0")
 
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-c i 8") 'helm-unicode)
 (define-key helm-map [esc] 'helm-keyboard-quit)
 (define-key helm-grep-map (kbd "C-w") 'backward-kill-word)
 
