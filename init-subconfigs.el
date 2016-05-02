@@ -9,7 +9,7 @@
 (require 'init-javascript)
 (require 'init-json)
 (require 'init-linum)
-(require 'init-magit)
+(require 'init-git)
 (require 'init-markdown)
 (require 'init-powerline)
 (require 'init-theme)
