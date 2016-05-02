@@ -1,6 +1,7 @@
-(require-package 'restclient)
-(require 'restclient)
+(use-package restclient
+  :ensure t
+  :defer t
+  :mode ("\\.http\\'" . restclient-mode))
 
-(add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 
 (provide 'init-restclient)

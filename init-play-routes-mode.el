@@ -1,4 +1,5 @@
-(require-package 'play-routes-mode)
-(require 'play-routes-mode)
+(use-package play-routes-mode
+  :ensure t
+  :defer t)
 
 (provide 'init-play-routes-mode)

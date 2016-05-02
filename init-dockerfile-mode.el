@@ -1,3 +1,6 @@
-(require-package 'dockerfile-mode)
-(require 'dockerfile-mode)
+(use-package dockerfile-mode
+  :ensure t
+  :defer t
+)
+
 (provide 'init-dockerfile-mode)

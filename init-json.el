@@ -1,4 +1,5 @@
-(require-package 'json-mode)
-(require 'json-mode)
+(use-package json-mode
+  :ensure t
+  :defer t)
 
 (provide 'init-json)

@@ -1,4 +1,5 @@
-(require-package 'yaml-mode)
-(require 'yaml-mode)
+(use-package yaml-mode
+  :ensure t
+  :defer t)
 
 (provide 'init-yaml)

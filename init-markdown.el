@@ -1,8 +1,10 @@
-(require-package 'markdown-mode)
-(require 'markdown-mode)
+(use-package markdown-mode
+  :ensure t
+  :defer t
+  :mode
+  ("\\.text\\'" . gfm-mode)
+  ("\\.markdown\\'" . gfm-mode)
+  ("\\.md\\'" . gfm-mode))
 
-(add-to-list 'auto-mode-alist '("\\.text\\'" . gfm-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
 
 (provide 'init-markdown)

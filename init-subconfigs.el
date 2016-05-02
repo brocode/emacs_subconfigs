@@ -18,7 +18,6 @@
 (require 'init-dired)
 (require 'init-less)
 (require 'init-string-inflection)
-(require 'init-evil-unimpaired)
 (require 'init-org-mode)
 (require 'init-play-routes-mode)
 (require 'init-paradox)

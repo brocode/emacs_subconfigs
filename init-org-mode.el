@@ -1,51 +1,59 @@
-(require-package 'org-bullets)
+(use-package org-bullets
+  :ensure t
+  :after org
+  :defer t
+  :config
+                                        ; better bullets
+  (font-lock-add-keywords 'org-mode '(("^ +\\([-*]\\) " (0 (prog1 ()
+                                                             (compose-region (match-beginning 1) (match-end
+                                                                                                  1) "•"))))))
 
-; syntax highlightning in org mode snippets
-(setq org-src-fontify-natively t)
+                                        ; better header bullets
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+  )
 
-; hide *emphasis* /markers/
-(setq org-hide-emphasis-markers t)
+(use-package org
+  :ensure t
+  :defer t
+  :config
+                                        ; syntax highlightning in org mode snippets
+  (setq org-src-fontify-natively t)
 
-; better bullets
-(font-lock-add-keywords 'org-mode '(("^ +\\([-*]\\) " (0 (prog1 ()
-  (compose-region (match-beginning 1) (match-end
-    1) "•"))))))
-
-; better header bullets
-(require 'org-bullets)
-(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-
-(custom-set-faces
- '(org-level-1 ((t (:inherit outline-1 :height 1.5))))
- '(org-level-2 ((t (:inherit outline-2 :height 1.25))))
- '(org-level-3 ((t (:inherit outline-3 :height 1.1))))
- '(org-level-4 ((t (:inherit outline-4 :height 1.1))))
- )
+                                        ; hide *emphasis* /markers/
+  (setq org-hide-emphasis-markers t)
 
 
-; org-latex-listings: nil means the default verbatim block export,
-; 'minted means the minted package and any non-nil value other
-; than 'minted means the listings package.
-(setq org-latex-listings t)
-(setq org-export-latex-listings t)
+  (custom-set-faces
+   '(org-level-1 ((t (:inherit outline-1 :height 1.5))))
+   '(org-level-2 ((t (:inherit outline-2 :height 1.25))))
+   '(org-level-3 ((t (:inherit outline-3 :height 1.1))))
+   '(org-level-4 ((t (:inherit outline-4 :height 1.1)))))
 
-(require 'ox-latex)
-(add-to-list 'org-latex-packages-alist '("" "listings"))
 
-(evil-define-key 'normal org-mode-map (kbd "M-k") 'org-metaup)
-(evil-define-key 'normal org-mode-map (kbd "M-j") 'org-metadown)
-(evil-define-key 'normal org-mode-map (kbd "M-h") 'org-metaleft)
-(evil-define-key 'normal org-mode-map (kbd "M-l") 'org-metaright)
+                                        ; org-latex-listings: nil means the default verbatim block export,
+                                        ; 'minted means the minted package and any non-nil value other
+                                        ; than 'minted means the listings package.
+  (setq org-latex-listings t)
+  (setq org-export-latex-listings t)
 
-(evil-define-key 'normal org-mode-map (kbd "M-K") 'org-shiftmetaup)
-(evil-define-key 'normal org-mode-map (kbd "M-J") 'org-shiftmetadown)
-(evil-define-key 'normal org-mode-map (kbd "M-H") 'org-shiftmetaleft)
-(evil-define-key 'normal org-mode-map (kbd "M-L") 'org-shiftmetaright)
+  (require 'ox-latex)
+  (add-to-list 'org-latex-packages-alist '("" "listings"))
 
-(evil-define-key 'normal org-mode-map (kbd "$") 'org-end-of-line)
-(evil-define-key 'normal org-mode-map (kbd "^") 'org-beginning-of-line)
-(evil-define-key 'normal org-mode-map (kbd "0") 'org-beginning-of-line)
+  (evil-define-key 'normal org-mode-map (kbd "M-k") 'org-metaup)
+  (evil-define-key 'normal org-mode-map (kbd "M-j") 'org-metadown)
+  (evil-define-key 'normal org-mode-map (kbd "M-h") 'org-metaleft)
+  (evil-define-key 'normal org-mode-map (kbd "M-l") 'org-metaright)
 
-(evil-define-key 'normal org-mode-map (kbd "-") 'org-cycle-list-bullet)
+  (evil-define-key 'normal org-mode-map (kbd "M-K") 'org-shiftmetaup)
+  (evil-define-key 'normal org-mode-map (kbd "M-J") 'org-shiftmetadown)
+  (evil-define-key 'normal org-mode-map (kbd "M-H") 'org-shiftmetaleft)
+  (evil-define-key 'normal org-mode-map (kbd "M-L") 'org-shiftmetaright)
+
+  (evil-define-key 'normal org-mode-map (kbd "$") 'org-end-of-line)
+  (evil-define-key 'normal org-mode-map (kbd "^") 'org-beginning-of-line)
+  (evil-define-key 'normal org-mode-map (kbd "0") 'org-beginning-of-line)
+
+  (evil-define-key 'normal org-mode-map (kbd "-") 'org-cycle-list-bullet)
+  )
 
 (provide 'init-org-mode)

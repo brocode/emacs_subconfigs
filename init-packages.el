@@ -11,10 +11,8 @@
             (package-refresh-contents))
         (package-install package)))
 
-(unless (package-installed-p 'use-package)
-(package-refresh-contents)
-(package-install 'use-package))
 
+(require-package 'use-package)
 (require 'use-package)
 
 (provide 'init-packages)

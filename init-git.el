@@ -1,10 +1,10 @@
-(require-package 'magit)
-(require 'magit)
+(use-package magit
+  :ensure t)
 
-(require-package 'gitignore-mode)
-(require 'gitignore-mode)
+(use-package gitignore-mode
+  :ensure t)
 
-(require-package 'gitconfig-mode)
-(require 'gitconfig-mode)
+(use-package gitconfig-mode
+  :ensure t)
 
 (provide 'init-git)
