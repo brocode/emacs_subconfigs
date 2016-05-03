@@ -156,6 +156,9 @@
                                         ;move between buffers
   (define-key evil-normal-state-map (kbd "] b") 'next-buffer)
   (define-key evil-normal-state-map (kbd "[ b") 'previous-buffer)
+  (define-key evil-normal-state-map (kbd "C-h") 'evil-prev-buffer)
+  (define-key evil-normal-state-map (kbd "C-l") 'evil-next-buffer)
+
   ;; indent on ret
   (define-key evil-insert-state-map (kbd "RET") 'newline-and-indent)
   (define-key evil-normal-state-map (kbd "SPC SPC") 'helm-M-x)
