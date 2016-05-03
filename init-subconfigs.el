@@ -26,5 +26,6 @@
 (require 'init-restclient)
 (require 'init-dockerfile-mode)
 (require 'init-rainbow-mode)
+(require 'init-spellcheck)
 
 (provide 'init-subconfigs)
