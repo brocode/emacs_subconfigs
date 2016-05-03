@@ -52,5 +52,12 @@
   :after helm
   :bind (("C-c i 8" . helm-unicode)))
 
+(use-package helm-ag
+  :ensure t
+  :defer t
+  :after helm
+  :bind(
+        :map helm-ag-map
+        ("C-w" . backward-kill-word)))
 
 (provide 'init-helm)
