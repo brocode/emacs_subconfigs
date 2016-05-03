@@ -19,6 +19,12 @@
   :ensure t
   :diminish helm-mode
   :bind (("M-x" . helm-M-x)
+         ("C-x C-f" . helm-find-files)
+         ([remap execute-extended-command] . helm-M-x)
+         ([remap yank-pop]        . helm-show-kill-ring)
+         ([remap insert-register] . helm-register)
+         ([remap apropos-command] . helm-apropos)
+         ([remap occur] . helm-occur)
          :map helm-map
          ([esc] . helm-keyboard-quit)
          ("C-w" . backward-kill-word)
