@@ -21,4 +21,13 @@
   :after company
   :init (company-statistics-mode))
 
+(use-package helm-company               ; Helm frontend for company
+  :ensure t
+  :defer t
+  :after company helm
+  :init ;; Use Company for completion
+  ;(bind-key [remap completion-at-point] #'helm-company company-mode-map)
+  (bind-key "C-;" #'helm-company company-mode-map)
+  (bind-key "C-;" #'helm-company company-active-map))
+
 (provide 'init-company)
