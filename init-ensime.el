@@ -2,11 +2,11 @@
 (use-package ensime
   :ensure t
   :defer t
-  :after auto-complete
+  :after company
   :init
   (setenv "PATH" (concat "/usr/local/bin/:" (getenv "PATH")))
   (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-  (setq ensime-completion-style 'auto-complete)
+  (setq ensime-completion-style 'company)
 
   :config
   (define-key ensime-mode-map (kbd "M-t") 'ensime-inspect-type-at-point)

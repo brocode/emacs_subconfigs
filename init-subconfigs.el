@@ -2,7 +2,7 @@
 (require 'init-custom-functions)
 (require 'init-evil)
 (require 'init-sensible)
-(require 'init-auto-complete)
+(require 'init-company)
 (require 'init-yasnippet)
 (require 'init-ensime)
 (require 'init-helm)
