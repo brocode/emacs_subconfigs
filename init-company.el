@@ -11,14 +11,14 @@
   :diminish company-mode
 )
 
-;; (use-package company-quickhelp          ; Show help in tooltip
-;;   :ensure t
-;;   :after company
-;;   :init (company-quickhelp-mode))
+(use-package company-quickhelp          ; Show help in tooltip
+  :ensure t
+  :after company
+  :init (company-quickhelp-mode))
 
-;; (use-package company-statistics         ; Sort company candidates by statistics
-;;   :ensure t
-;;   :after company
-;;   :init (company-statistics-mode))
+(use-package company-statistics         ; Sort company candidates by statistics
+  :ensure t
+  :after company
+  :init (company-statistics-mode))
 
 (provide 'init-company)
