@@ -35,7 +35,7 @@
 (use-package company-statistics         ; Sort company candidates by statistics
   :ensure t
   :after company
-  :init (company-statistics-mode))
+  :init (add-hook 'after-init-hook 'company-statistics-mode))
 
 (use-package helm-company               ; Helm frontend for company
   :ensure t
