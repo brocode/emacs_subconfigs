@@ -5,7 +5,7 @@
   (setq ispell-program-name (if (eq system-type 'darwin)
                                 (executable-find "aspell")
                               (executable-find "hunspell"))
-        ispell-dictionary "en_GB"     ; Default dictionary
+        ispell-dictionary "en_US"     ; Default dictionary
         ispell-silently-savep t       ; Don't ask when saving the private dict
         ;; Increase the height of the choices window to take our header line
         ;; into account.
