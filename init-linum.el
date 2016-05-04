@@ -2,25 +2,20 @@
 (add-hook 'prog-mode-hook 'column-number-mode t)
 (global-linum-mode 1)
 
-(if window-system
-    nil
-  (eval-after-load 'linum
-    '(progn
-       (defface linum-leading-zero
-         `((t :inherit 'linum
-              :foreground ,(face-attribute 'linum :background nil t)))
-         "Face for displaying leading zeroes for line numbers in display margin."
-         :group 'linum)
+(unless window-system
+  (add-hook 'linum-before-numbering-hook
+	    (lambda ()
+	      (setq-local linum-format-fmt
+			  (let ((w (length (number-to-string
+					    (count-lines (point-min) (point-max))))))
+			    (concat "%" (number-to-string w) "d"))))))
 
-       (defun linum-format-func (line)
-         (let ((w (max 2 (length
-                          (number-to-string (count-lines (point-min) (point-max)))))))
-           (concat
-            (propertize (make-string (- w (length (number-to-string line))) ?0)
-                        'face 'linum-leading-zero)
-            (propertize (number-to-string line) 'face 'linum)
-            "\u2502")))
+(defun linum-format-func (line)
+  (concat
+   (propertize (format linum-format-fmt line) 'face 'linum)
+   (propertize " " 'face 'mode-line)))
 
-       (setq linum-format 'linum-format-func))))
+(unless window-system
+  (setq linum-format 'linum-format-func))
 
 (provide 'init-linum)
