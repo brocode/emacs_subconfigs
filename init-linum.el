@@ -13,7 +13,7 @@
 (defun linum-format-func (line)
   (concat
    (propertize (format linum-format-fmt line) 'face 'linum)
-   (propertize " " 'face 'mode-line)))
+   (propertize " " 'face 'fringe)))
 
 (unless window-system
   (setq linum-format 'linum-format-func))
