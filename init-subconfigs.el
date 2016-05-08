@@ -27,5 +27,6 @@
 (require 'init-dockerfile-mode)
 (require 'init-rainbow-mode)
 (require 'init-spellcheck)
+(require 'init-pretty)
 
 (provide 'init-subconfigs)
