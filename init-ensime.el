@@ -2,7 +2,7 @@
 (use-package ensime
   :ensure t
   :defer t
-  :after company
+  :after company scala
   :init
   (setenv "PATH" (concat "/usr/local/bin/:" (getenv "PATH")))
   (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)

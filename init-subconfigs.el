@@ -4,6 +4,7 @@
 (require 'init-sensible)
 (require 'init-company)
 (require 'init-yasnippet)
+(require 'init-scala)
 (require 'init-ensime)
 (require 'init-helm)
 (require 'init-javascript)
