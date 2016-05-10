@@ -6,12 +6,15 @@
         company-tooltip-flip-when-above t)
   (define-key company-active-map (kbd "C-n") #'company-select-next)
   (define-key company-active-map (kbd "C-p") #'company-select-previous)
-  (define-key company-active-map [tab] 'company-complete-common-or-cycle)
-  (define-key company-active-map (kbd "TAB") 'company-complete-common-or-cycle)
-  (define-key company-mode-map [remap indent-for-tab-command]
-    'company-indent-for-tab-command)
+  (define-key company-active-map [tab] #'company-complete-selection)
+  (define-key company-active-map (kbd "TAB") #'company-complete-selection)
+  (define-key company-mode-map [remap indent-for-tab-command] 'company-indent-for-tab-command)
 
-  (setq tab-always-indent 'complete)
+  (setq tab-always-indent 'complete
+        company-dabbrev-ignore-case nil
+        company-dabbrev-code-ignore-case nil
+        company-dabbrev-downcase nil
+  )
 
   (defvar completion-at-point-functions-saved nil)
 
