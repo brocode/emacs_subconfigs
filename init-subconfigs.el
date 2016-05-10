@@ -29,5 +29,6 @@
 (require 'init-rainbow-mode)
 (require 'init-spellcheck)
 (require 'init-pretty)
+(require 'init-imenu)
 
 (provide 'init-subconfigs)
