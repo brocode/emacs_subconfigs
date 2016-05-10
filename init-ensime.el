@@ -5,6 +5,7 @@
   :after company scala
   :init
   (setenv "PATH" (concat "/usr/local/bin/:" (getenv "PATH")))
+  (add-hook 'java-mode-hook 'ensime-scala-mode-hook)
   (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
   (setq ensime-completion-style 'company)
 
