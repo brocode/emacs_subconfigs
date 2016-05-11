@@ -85,6 +85,7 @@
 (setq-default tab-width 2 indent-tabs-mode nil)
 (setq js-indent-level 2)
 (setq c-basic-offset 2)
+(setq css-indent-offset 2)
 
 (setq x-select-enable-clipboard nil)
 
