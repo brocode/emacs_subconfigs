@@ -8,6 +8,7 @@
   (add-hook 'java-mode-hook 'ensime-scala-mode-hook)
   (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
   (setq ensime-completion-style 'company)
+  (setq ensime-use-helm t)
 
   :config
   (define-key ensime-mode-map (kbd "M-t") 'ensime-inspect-type-at-point)
