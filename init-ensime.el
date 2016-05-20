@@ -20,6 +20,7 @@
   (define-key ensime-mode-map (kbd "M-E") 'ensime-show-all-errors-and-warnings)
   (define-key ensime-mode-map (kbd "M-d") 'ensime-edit-definition)
   (define-key ensime-mode-map (kbd "M-i") 'ensime-import-type-at-point)
+  (define-key ensime-mode-map (kbd "M-a") 'ensime-refactor-add-type-annotation)
 
   (evil-define-key 'insert ensime-mode-map (kbd "C-n") 'company-select-next)
   (evil-define-key 'insert ensime-mode-map (kbd "C-p") 'company-select-previous)
