@@ -30,5 +30,6 @@
 (require 'init-spellcheck)
 (require 'init-pretty)
 (require 'init-imenu)
+(require 'init-rainbow-delimiters)
 
 (provide 'init-subconfigs)
