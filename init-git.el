@@ -1,6 +1,7 @@
 (use-package magit
   :ensure t
-  :bind (("<f12>" . magit-status))
+  :init
+  (define-key global-map (kbd "<f12>") 'magit-status)
   )
 
 (use-package gitignore-mode
