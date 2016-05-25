@@ -1,5 +1,7 @@
 (use-package magit
-  :ensure t)
+  :ensure t
+  :bind (("<f12>" . magit-status))
+  )
 
 (use-package gitignore-mode
   :ensure t)
