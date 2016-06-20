@@ -31,5 +31,6 @@
 (require 'init-pretty)
 (require 'init-imenu)
 (require 'init-rainbow-delimiters)
+(require 'init-cucumber)
 
 (provide 'init-subconfigs)
