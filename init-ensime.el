@@ -9,6 +9,7 @@
   (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
   (setq ensime-completion-style 'company)
   (setq ensime-use-helm t)
+  (setq ensime-startup-snapshot-notification nil)
 
   :config
   (define-key ensime-mode-map (kbd "M-t") 'ensime-inspect-type-at-point)
@@ -21,11 +22,11 @@
   (define-key ensime-mode-map (kbd "M-d") 'ensime-edit-definition)
   (define-key ensime-mode-map (kbd "M-i") 'ensime-import-type-at-point)
   (define-key ensime-mode-map (kbd "M-a") 'ensime-refactor-add-type-annotation)
+  (define-key ensime-mode-map (kbd "C-]") 'ensime-edit-definition)
+  (define-key ensime-mode-map (kbd "M-d") 'ensime-edit-definition)
 
   (evil-define-key 'insert ensime-mode-map (kbd "C-n") 'company-select-next)
   (evil-define-key 'insert ensime-mode-map (kbd "C-p") 'company-select-previous)
-  (evil-define-key 'normal ensime-mode-map (kbd "C-]") 'ensime-edit-definition)
-  (evil-define-key 'normal ensime-mode-map (kbd "M-d") 'ensime-edit-definition)
 
   (evil-set-command-property 'ensime-edit-definition :jump t)
 
