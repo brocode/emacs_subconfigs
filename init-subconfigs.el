@@ -32,5 +32,6 @@
 (require 'init-imenu)
 (require 'init-rainbow-delimiters)
 (require 'init-cucumber)
+(require 'init-zone)
 
 (provide 'init-subconfigs)
