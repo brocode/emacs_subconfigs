@@ -20,6 +20,12 @@
     :config
     (global-evil-surround-mode 1))
 
+  (use-package evil-quickscope
+    :ensure t
+    :config
+    (require 'evil-quickscope)
+    (global-evil-quickscope-mode 1))
+
   (use-package evil-numbers
     :ensure t
     :config
