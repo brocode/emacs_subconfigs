@@ -1,6 +1,5 @@
-
 (use-package ensime
-  :ensure t
+  :pin melpa-stable
   :defer t
   :after company scala
   :init
