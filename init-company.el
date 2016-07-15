@@ -8,6 +8,7 @@
   (define-key company-active-map (kbd "C-p") #'company-select-previous)
   (define-key company-active-map [tab] #'company-complete-selection)
   (define-key company-active-map (kbd "TAB") #'company-complete-selection)
+  (define-key global-map (kbd "C-c .") 'company-files)
   (define-key company-mode-map [remap indent-for-tab-command] 'company-indent-for-tab-command)
 
   (setq tab-always-indent 'complete
