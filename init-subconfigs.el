@@ -33,5 +33,6 @@
 (require 'init-rainbow-delimiters)
 (require 'init-cucumber)
 (require 'init-zone)
+(require 'init-rust)
 
 (provide 'init-subconfigs)
