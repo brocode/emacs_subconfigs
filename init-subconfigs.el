@@ -34,5 +34,6 @@
 (require 'init-cucumber)
 (require 'init-zone)
 (require 'init-rust)
+(require 'init-erlang)
 
 (provide 'init-subconfigs)
