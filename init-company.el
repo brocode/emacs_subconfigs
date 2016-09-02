@@ -34,7 +34,11 @@
 (use-package company-quickhelp          ; Show help in tooltip
   :ensure t
   :after company
-  :init (company-quickhelp-mode))
+  :init
+  (if (not (eq system-type 'darwin))
+    (company-quickhelp-mode 1)
+  )
+)
 
 (use-package company-statistics         ; Sort company candidates by statistics
   :ensure t
