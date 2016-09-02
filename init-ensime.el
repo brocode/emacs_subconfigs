@@ -48,6 +48,3 @@
 )
 
 (provide 'init-ensime)
-
-
-
