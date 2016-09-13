@@ -35,5 +35,6 @@
 (require 'init-zone)
 (require 'init-rust)
 (require 'init-erlang)
+(require 'init-elm)
 
 (provide 'init-subconfigs)
