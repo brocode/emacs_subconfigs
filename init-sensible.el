@@ -111,4 +111,7 @@
 (add-hook 'prog-mode-hook (lambda () (setq show-trailing-whitespace t)))
 (add-hook 'conf-mode-hook (lambda () (setq show-trailing-whitespace t)))
 
+; truncate lines
+(set-default 'truncate-lines t)
+
 (provide 'init-sensible)
