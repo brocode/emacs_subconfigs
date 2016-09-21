@@ -87,7 +87,10 @@
 (setq c-basic-offset 2)
 (setq css-indent-offset 2)
 
-(setq x-select-enable-clipboard nil)
+; disable default clipboard integration. use evil '+' register
+(if (version< emacs-version "25")
+    (setq x-select-enable-clipboard nil)
+  (setq select-enable-clipboard nil))
 
 ; save all file buffers on focus loss
 (add-hook 'focus-out-hook (lambda () (save-some-buffers t)))
