@@ -176,6 +176,9 @@
   (define-key evil-normal-state-map (kbd "j") 'evil-next-visual-line)
   (define-key evil-normal-state-map (kbd "k") 'evil-previous-visual-line)
 
+  (define-key minibuffer-local-map (kbd "C-w") 'backward-kill-word)
+  (define-key minibuffer-local-map (kbd "C-r") 'evil-paste-from-register)
+
 
   ;; evil mappings in package list
   (defun my-package-list-get-q-key ()
