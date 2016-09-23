@@ -4,6 +4,7 @@
   :config
   (setq company-tooltip-align-annotations t
         company-tooltip-flip-when-above t)
+  (define-key company-active-map (kbd "C-w") #'backward-kill-word)
   (define-key company-active-map (kbd "C-n") #'company-select-next)
   (define-key company-active-map (kbd "C-p") #'company-select-previous)
   (define-key company-active-map [tab] #'company-complete-selection)
