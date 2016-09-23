@@ -28,6 +28,7 @@
          :map helm-map
          ([esc] . helm-keyboard-quit)
          ("C-w" . backward-kill-word)
+         ("C-r" . evil-paste-from-register)
          :map helm-grep-map
          ("C-w" . backward-kill-word))
   :config
