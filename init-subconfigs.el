@@ -36,5 +36,6 @@
 (require 'init-rust)
 (require 'init-erlang)
 (require 'init-elm)
+(require 'init-elastic)
 
 (provide 'init-subconfigs)
