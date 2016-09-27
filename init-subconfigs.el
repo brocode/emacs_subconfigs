@@ -37,5 +37,6 @@
 (require 'init-erlang)
 (require 'init-elm)
 (require 'init-elastic)
+(require 'init-smartparens)
 
 (provide 'init-subconfigs)
