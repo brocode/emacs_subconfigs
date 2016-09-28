@@ -18,6 +18,8 @@
   (use-package evil-surround
     :ensure t
     :config
+    (evil-define-key 'visual evil-surround-mode-map "s" 'evil-surround-region)
+    (evil-define-key 'visual evil-surround-mode-map "S" 'evil-substitute)
     (global-evil-surround-mode 1))
 
   (use-package evil-quickscope
