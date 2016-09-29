@@ -6,9 +6,7 @@
   (setq sp-highlight-pair-overlay nil)
   (setq sp-highlight-wrap-overlay nil)
   (setq sp-highlight-wrap-tag-overlay nil)
-  ; in case global mode turns out to be annoying as hell use this instead
-  ;(add-hook 'emacs-lisp-mode-hook #'smartparens-mode)
-  (smartparens-global-mode t))
+  (add-hook 'emacs-lisp-mode-hook #'smartparens-mode))
 
 (use-package evil-cleverparens
   :after smartparens
