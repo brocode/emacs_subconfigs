@@ -5,7 +5,8 @@
   :init
   (setq racer-cmd "~/workspace/racer/target/release/racer")
   (setq racer-rust-src-path "~/workspace/rust/src")
-  (setq rust-indent-offset 2)
+  (setq rust-rustfmt-bin "~/.cargo/bin/rustfmt")
+  (setq rust-indent-offset 4)
   (add-hook 'rust-mode-hook #'racer-mode)
   (add-hook 'racer-mode-hook #'eldoc-mode)
   (add-hook 'racer-mode-hook #'company-mode)
