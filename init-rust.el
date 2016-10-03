@@ -3,7 +3,7 @@
   :ensure t
   :after company rust
   :init
-  (setq racer-cmd "~/workspace/racer/target/release/racer")
+  (setq racer-cmd "~/.cargo/bin/racer")
   (setq racer-rust-src-path "~/workspace/rust/src")
   (setq rust-rustfmt-bin "~/.cargo/bin/rustfmt")
   ; to use with rust format set tab_spaces = 2 in rustfmt.toml
