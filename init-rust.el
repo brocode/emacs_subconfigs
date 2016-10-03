@@ -12,6 +12,8 @@
   :config
   (define-key rust-mode-map (kbd "TAB") #'company-indent-or-complete-common)
   (define-key rust-mode-map (kbd "M-d") 'racer-find-definition)
+  (evil-define-key 'insert rust-mode-map (kbd "C-n") 'company-select-next)
+  (evil-define-key 'insert rust-mode-map (kbd "C-p") 'company-select-previous)
 )
 
 (use-package rust-mode
