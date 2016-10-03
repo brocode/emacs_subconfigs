@@ -21,4 +21,10 @@
   :ensure t
 )
 
+(use-package flycheck-rust
+  :after flycheck
+  :ensure t
+  :init
+  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup))
+
 (provide 'init-rust)
