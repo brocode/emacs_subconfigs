@@ -3,9 +3,9 @@
   :ensure t
   :after company rust
   :init
-  (setq racer-cmd "~/.cargo/bin/racer")
-  (setq racer-rust-src-path "~/workspace/rust/src")
-  (setq rust-rustfmt-bin "~/.cargo/bin/rustfmt")
+  (setq racer-cmd (expand-file-name "~/.cargo/bin/racer"))
+  (setq racer-rust-src-path (expand-file-name "~/workspace/rust/src"))
+  (setq rust-rustfmt-bin (expand-file-name "~/.cargo/bin/rustfmt"))
   ; to use with rust format set tab_spaces = 2 in rustfmt.toml
   (setq rust-indent-offset 2)
   (add-hook 'rust-mode-hook #'racer-mode)
