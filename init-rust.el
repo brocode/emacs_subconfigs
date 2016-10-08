@@ -21,6 +21,10 @@
 (use-package rust-mode
   :defer t
   :ensure t
+  :after flycheck
+  :init
+  (add-hook 'rust-mode-hook #'flycheck-mode)
+  (add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
 )
 
 (use-package flycheck-rust
