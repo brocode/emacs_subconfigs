@@ -1,4 +1,3 @@
-
 (menu-bar-mode -1)
 
 ;; backup files are evil
@@ -9,6 +8,9 @@
 
 ;; autosave is evil
 (setq auto-save-default nil)
+
+;; org mode for scratchpad
+(setq initial-major-mode 'org-mode)
 
 (set 'ad-redefinition-action 'accept)
 
