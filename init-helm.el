@@ -53,6 +53,14 @@
   :after helm
   :bind (("C-c i 8" . helm-unicode)))
 
+(use-package helm-rage
+  :ensure t
+  ;:load-path "/data/home/phaun/development/projects/helm-rage"
+  :defer t
+  :init
+  (define-key global-map (kbd "C-c r") 'helm-rage)
+  :after helm)
+
 (use-package helm-ag
   :ensure t
   :defer t
