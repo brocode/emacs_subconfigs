@@ -2,6 +2,7 @@
   :ensure t
   :init
   (define-key global-map (kbd "<f12>") 'magit-status)
+  :config
   (define-key magit-status-mode-map (kbd "<f12>") 'magit-mode-bury-buffer)
   )
 
