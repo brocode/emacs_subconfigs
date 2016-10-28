@@ -2,6 +2,7 @@
   :ensure t
   :init
   (define-key global-map (kbd "<f12>") 'magit-status)
+  (define-key magit-status-mode-map (kbd "<f12>") 'magit-mode-bury-buffer)
   )
 
 (use-package gitignore-mode
