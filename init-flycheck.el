@@ -1,6 +1,7 @@
 (use-package flycheck
   :ensure t
   :defer t
+  :diminish (flycheck-mode . "✔")
   :config
   (evil-define-key 'normal flycheck-error-list-mode-map
       "q" 'quit-window
