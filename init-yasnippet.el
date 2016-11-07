@@ -7,7 +7,7 @@
   (define-key yas-minor-mode-map [(tab)]        nil)
   (define-key yas-minor-mode-map (kbd "TAB")    nil)
   (define-key yas-minor-mode-map (kbd "<tab>")  nil)
-  (define-key yas-minor-mode-map (kbd "C-SPC")  'yas-next-field-or-maybe-expand)
+  ;(define-key yas-minor-mode-map (kbd "C-c y")  'yas-expand)
   (define-key yas-keymap [(tab)] nil)
   (define-key yas-keymap [(backtab)] nil)
   (define-key yas-keymap (kbd "TAB") nil)
