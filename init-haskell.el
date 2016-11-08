@@ -30,4 +30,10 @@
               ("C-c C-c" . haskell-process-cabal-build)
               ("C-c c" . haskell-process-cabal)))
 
+(use-package company-ghc
+  :ensure t
+  :init
+  (add-to-list 'company-backends 'company-ghc)
+  (setq company-ghc-show-info t))
+
 (provide 'init-haskell)
