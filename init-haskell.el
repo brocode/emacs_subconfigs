@@ -10,6 +10,7 @@
         haskell-process-suggest-remove-import-lines t
         haskell-process-auto-import-loaded-modules t)
 
+  (add-hook 'haskell-mode-hook (lambda () (ghc-init)))
   (add-hook 'haskell-mode-hook #'haskell-decl-scan-mode) ; IMenu support
   (add-hook 'haskell-mode-hook #'interactive-haskell-mode))
 
