@@ -38,5 +38,6 @@
 (require 'init-elm)
 (require 'init-elastic)
 (require 'init-smartparens)
+(require 'init-haskell)
 
 (provide 'init-subconfigs)
