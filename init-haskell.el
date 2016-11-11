@@ -18,7 +18,7 @@
   :ensure t
   :after flycheck haskell-mode
   :init
-  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup)
+  (add-hook 'flycheck-mode-hook #'flycheck-haskell-setup)
   )
 
 
@@ -36,5 +36,11 @@
   :init
   (add-to-list 'company-backends 'company-ghc)
   (setq company-ghc-show-info t))
+
+(use-package hindent                    ; Haskell indentation
+  :after haskell-mode
+  :ensure t
+  :init
+  (add-hook 'haskell-mode-hook #'hindent-mode))
 
 (provide 'init-haskell)
