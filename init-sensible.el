@@ -38,7 +38,9 @@
 
 ; remember file position
 (setq save-place-file "~/.emacs.d/saveplace")
-(setq-default save-place t)
+(if (fboundp #'save-place-mode)
+  (save-place-mode +1)
+  (setq-default save-place t))
 (require 'saveplace)
 
 ;show mathing parens
