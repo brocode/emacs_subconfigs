@@ -39,5 +39,6 @@
 (require 'init-elastic)
 (require 'init-smartparens)
 (require 'init-haskell)
+(require 'init-purescript)
 
 (provide 'init-subconfigs)
