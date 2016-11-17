@@ -137,4 +137,7 @@
 ; truncate lines
 (set-default 'truncate-lines t)
 
+; fill column
+(setq fill-column 120)
+
 (provide 'init-sensible)
