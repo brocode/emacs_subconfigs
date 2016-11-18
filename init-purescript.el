@@ -14,6 +14,10 @@
             (lambda ()
               (psc-ide-mode)
               (flycheck-mode)
-              (turn-on-purescript-indentation))))
+              (turn-on-purescript-indentation)))
+  :config
+  (define-key purescript-mode-map (kbd "M-d") 'psc-ide-goto-definition)
+  (define-key purescript-mode-map (kbd "C-]") 'psc-ide-goto-definition)
+  (define-key purescript-mode-map (kbd "M-i") 'psc-ide-add-import))
 
 (provide 'init-purescript)
