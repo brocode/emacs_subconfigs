@@ -18,6 +18,7 @@
   :config
   (define-key purescript-mode-map (kbd "M-d") 'psc-ide-goto-definition)
   (define-key purescript-mode-map (kbd "C-]") 'psc-ide-goto-definition)
-  (define-key purescript-mode-map (kbd "M-i") 'psc-ide-add-import))
+  (define-key purescript-mode-map (kbd "M-i") 'psc-ide-add-import)
+  (add-hook 'purescript-mode-hook #'haskell-indentation-mode))
 
 (provide 'init-purescript)
