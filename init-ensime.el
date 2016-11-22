@@ -1,6 +1,6 @@
 (use-package ensime
-  :pin melpa-stable
   :defer t
+  :ensure t
   :after company scala
   :init
   (setenv "PATH" (concat "/usr/local/bin/:" (getenv "PATH")))
