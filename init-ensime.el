@@ -9,6 +9,7 @@
   (setq ensime-completion-style 'company)
   (setq ensime-use-helm t)
   (setq ensime-startup-snapshot-notification nil)
+  (setq ensime-startup-notification nil)
 
   :config
   (define-key ensime-mode-map (kbd "M-t") 'ensime-inspect-type-at-point)
