@@ -40,5 +40,6 @@
 (require 'init-smartparens)
 (require 'init-haskell)
 (require 'init-purescript)
+(require 'init-go)
 
 (provide 'init-subconfigs)
