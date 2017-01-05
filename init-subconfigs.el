@@ -41,5 +41,6 @@
 (require 'init-haskell)
 (require 'init-purescript)
 (require 'init-go)
+(require 'init-python)
 
 (provide 'init-subconfigs)
