@@ -6,6 +6,6 @@
 
   (add-hook 'python-mode-hook 'my/python-mode-hook)
   (define-key jedi-mode-map (kbd "M-d") 'jedi:goto-definition)
-)
+  (define-key jedi-mode-map (kbd "C-]") 'jedi:goto-definition))
 
 (provide 'init-python)
