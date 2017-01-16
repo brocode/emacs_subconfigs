@@ -42,5 +42,6 @@
 (require 'init-purescript)
 (require 'init-go)
 (require 'init-python)
+(require 'init-ripgrep)
 
 (provide 'init-subconfigs)
