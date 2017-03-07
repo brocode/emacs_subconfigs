@@ -43,5 +43,6 @@
 (require 'init-go)
 (require 'init-python)
 (require 'init-elixir)
+(require 'init-groovy)
 
 (provide 'init-subconfigs)
