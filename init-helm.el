@@ -70,4 +70,9 @@
         :map helm-ag-map
         ("C-w" . backward-kill-word)))
 
+(use-package helm-swoop
+  :ensure t
+  :defer t
+  :after helm)
+
 (provide 'init-helm)
