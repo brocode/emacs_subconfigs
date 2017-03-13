@@ -44,5 +44,6 @@
 (require 'init-python)
 (require 'init-elixir)
 (require 'init-groovy)
+(require 'init-php)
 
 (provide 'init-subconfigs)
