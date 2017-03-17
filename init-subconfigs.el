@@ -18,6 +18,7 @@
 (require 'init-ediff)
 (require 'init-dired)
 (require 'init-less)
+(require 'init-scss)
 (require 'init-string-inflection)
 (require 'init-org-mode)
 (require 'init-play-routes-mode)
