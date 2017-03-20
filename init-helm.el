@@ -45,7 +45,7 @@
 (use-package helm-projectile
   :ensure t
   :after helm projectile
-  :config
+  :init
   (helm-projectile-on))
 
 (use-package helm-unicode
