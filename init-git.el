@@ -20,4 +20,8 @@
   :config
   (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh))
 
+(use-package evil-magit
+  :after magit
+  :ensure t)
+
 (provide 'init-git)
