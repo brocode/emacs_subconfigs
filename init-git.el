@@ -22,6 +22,8 @@
 
 (use-package evil-magit
   :after magit
-  :ensure t)
+  :ensure t
+  :init
+  (evil-magit-init))
 
 (provide 'init-git)
