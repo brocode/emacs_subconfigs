@@ -46,5 +46,6 @@
 (require 'init-elixir)
 (require 'init-groovy)
 (require 'init-php)
+(require 'init-typescript)
 
 (provide 'init-subconfigs)
