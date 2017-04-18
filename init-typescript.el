@@ -16,6 +16,11 @@
     ;; formats the buffer before saving
     ;(add-hook 'before-save-hook 'tide-format-before-save)
 
-    (add-hook 'typescript-mode-hook #'setup-tide-mode)))
+    (add-hook 'typescript-mode-hook #'setup-tide-mode))
+  :config
+  (progn
+    (define-key typescript-mode-map (kbd "C-]") 'tide-jump-to-definition)
+    (define-key typescript-mode-map (kbd "M-d") 'tide-jump-to-definition)
+    ))
 
 (provide 'init-typescript)
