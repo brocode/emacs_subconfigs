@@ -19,6 +19,7 @@
     (add-hook 'typescript-mode-hook #'setup-tide-mode))
   :config
   (progn
+    (setq typescript-indent-level 2)
     (define-key typescript-mode-map (kbd "C-]") 'tide-jump-to-definition)
     (define-key typescript-mode-map (kbd "M-d") 'tide-jump-to-definition)
     ))
