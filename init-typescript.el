@@ -21,6 +21,7 @@
   (progn
     (setq typescript-indent-level 2)
     (define-key typescript-mode-map (kbd "C-]") 'tide-jump-to-definition)
+    (evil-set-command-property 'tide-jump-to-definition :jump t)
     (define-key typescript-mode-map (kbd "M-d") 'tide-jump-to-definition)
     ))
 
