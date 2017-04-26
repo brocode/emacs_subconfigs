@@ -13,7 +13,8 @@
 
   (add-to-list 'projectile-globally-ignored-directories "target")
   (add-to-list 'projectile-globally-ignored-directories "node_modules")
-  (add-to-list 'projectile-globally-ignored-directories ".ensime_cache"))
+  (add-to-list 'projectile-globally-ignored-directories ".ensime_cache")
+  (add-to-list 'projectile-globally-ignored-directories "vendor"))
 
 
 (use-package helm
