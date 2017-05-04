@@ -8,6 +8,7 @@
   (add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
   (setq ensime-completion-style 'company)
   (setq ensime-use-helm t)
+  (setq ensime-search-interface 'helm)
   (setq ensime-startup-snapshot-notification nil)
   (setq ensime-startup-notification nil)
 
