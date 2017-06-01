@@ -46,5 +46,6 @@
 (require 'init-groovy)
 (require 'init-php)
 (require 'init-typescript)
+(require 'init-ace-window)
 
 (provide 'init-subconfigs)
