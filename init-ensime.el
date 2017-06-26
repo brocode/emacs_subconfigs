@@ -13,7 +13,7 @@
   (setq ensime-startup-notification nil)
 
   :config
-  (define-key ensime-mode-map (kbd "M-t") 'ensime-inspect-type-at-point)
+  (define-key ensime-mode-map (kbd "M-t") 'ensime-type-at-point-full-name)
   (define-key ensime-mode-map (kbd "M-r") 'ensime-refactor-diff-rename)
   (define-key ensime-mode-map (kbd "M-o") 'ensime-refactor-diff-organize-imports)
   (define-key ensime-mode-map (kbd "M-f") 'ensime-format-source)
