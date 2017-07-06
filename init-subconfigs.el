@@ -37,7 +37,6 @@
 (require 'init-rust)
 (require 'init-erlang)
 (require 'init-elm)
-(require 'init-elastic)
 (require 'init-smartparens)
 (require 'init-haskell)
 (require 'init-go)
