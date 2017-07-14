@@ -1,6 +1,8 @@
 (use-package typescript-mode
   :ensure t
-  :defer t)
+  :defer t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.tsx$" . typescript-mode)))
 
 (use-package tide
   :ensure t
