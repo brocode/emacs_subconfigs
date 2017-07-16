@@ -46,5 +46,6 @@
 (require 'init-php)
 (require 'init-typescript)
 (require 'init-ace-window)
+(require 'init-web-mode)
 
 (provide 'init-subconfigs)
