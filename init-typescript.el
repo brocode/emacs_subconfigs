@@ -14,6 +14,7 @@
       (eldoc-mode +1)
       (local-set-key (kbd "C-]") 'tide-jump-to-definition)
       (local-set-key (kbd "M-d") 'tide-jump-to-definition)
+      (local-set-key (kbd "M-i") 'tide-fix)
       (tide-hl-identifier-mode +1))
 
     ;; formats the buffer before saving

@@ -1,7 +1,7 @@
 (use-package ensime
   :defer t
-  :ensure t
   :after company scala
+  :load-path "/home/phaun/development/projects/ensime-emacs"
   :init
   (setenv "PATH" (concat "/usr/local/bin/:" (getenv "PATH")))
   (add-hook 'java-mode-hook 'ensime-scala-mode-hook)
@@ -25,6 +25,8 @@
   (define-key ensime-mode-map (kbd "M-a") 'ensime-refactor-add-type-annotation)
   (define-key ensime-mode-map (kbd "C-]") 'ensime-edit-definition)
   (define-key ensime-mode-map (kbd "M-d") 'ensime-edit-definition)
+  (define-key ensime-mode-map (kbd "M-g") 'ensime-show-uses-of-symbol-at-point)
+  (define-key ensime-mode-map (kbd "M-h") 'ensime-show-hierarchy-of-type-at-point)
 
   (evil-define-key 'insert ensime-mode-map (kbd "C-n") 'company-select-next)
   (evil-define-key 'insert ensime-mode-map (kbd "C-p") 'company-select-previous)
