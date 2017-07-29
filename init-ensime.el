@@ -1,7 +1,7 @@
 (use-package ensime
   :defer t
+  :ensure t
   :after company scala
-  :load-path "/home/phaun/development/projects/ensime-emacs"
   :init
   (setenv "PATH" (concat "/usr/local/bin/:" (getenv "PATH")))
   (add-hook 'java-mode-hook 'ensime-scala-mode-hook)
