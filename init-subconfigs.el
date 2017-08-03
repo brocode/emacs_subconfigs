@@ -47,5 +47,6 @@
 (require 'init-typescript)
 (require 'init-ace-window)
 (require 'init-web-mode)
+(require 'init-grep)
 
 (provide 'init-subconfigs)
