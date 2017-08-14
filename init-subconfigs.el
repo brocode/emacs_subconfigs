@@ -48,5 +48,6 @@
 (require 'init-ace-window)
 (require 'init-web-mode)
 (require 'init-grep)
+(require 'init-confmode)
 
 (provide 'init-subconfigs)
