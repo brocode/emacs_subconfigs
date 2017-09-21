@@ -17,6 +17,7 @@
   (define-key ensime-mode-map (kbd "M-r") 'ensime-refactor-diff-rename)
   (define-key ensime-mode-map (kbd "M-o") 'ensime-refactor-diff-organize-imports)
   (define-key ensime-mode-map (kbd "M-f") 'ensime-format-source)
+  (define-key ensime-mode-map (kbd "M-s") 'ensime-search)
   (define-key ensime-mode-map (kbd "M-c") 'ensime-typecheck-current-buffer)
   (define-key ensime-mode-map (kbd "M-e") 'ensime-print-errors-at-point)
   (define-key ensime-mode-map (kbd "M-E") 'ensime-show-all-errors-and-warnings)
