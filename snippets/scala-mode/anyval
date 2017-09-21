@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: anyval
+# key: anyval
+# --
+case class $1(value: $0) extends AnyVal {
+  override def toString: String = value.toString
+}
