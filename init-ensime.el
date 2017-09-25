@@ -10,6 +10,7 @@
   (setq ensime-use-helm t)
   (setq ensime-search-interface 'helm)
   (setq ensime-startup-snapshot-notification nil)
+  (setq ensime-startup-snapshot-notification-3 nil)
   (setq ensime-startup-notification nil)
 
   :config
