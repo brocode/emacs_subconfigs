@@ -4,6 +4,10 @@
 (use-package projectile
   :ensure t
   :config
+  (setq projectile-mode-line
+        '(:eval (format " Projectile[%s(%s)]"
+                        (projectile-project-name))))
+
   (projectile-global-mode)
 
   (setq projectile-require-project-root nil)
