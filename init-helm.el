@@ -5,7 +5,7 @@
   :ensure t
   :config
   (setq projectile-mode-line
-        '(:eval (format " Projectile[%s]"
+        '(:eval (format " P[%s]"
                         (projectile-project-name))))
 
   (projectile-global-mode)
