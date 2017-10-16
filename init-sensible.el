@@ -140,4 +140,11 @@
 ; fill column
 (setq fill-column 120)
 
+
+; use firefox developer
+
+(when (executable-find "firefox-developer")
+  (setq browse-url-browser-function 'browse-url-generic
+        browse-url-generic-program "firefox-developer"))
+
 (provide 'init-sensible)
