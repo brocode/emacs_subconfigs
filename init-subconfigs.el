@@ -49,5 +49,6 @@
 (require 'init-web-mode)
 (require 'init-grep)
 (require 'init-confmode)
+(require 'init-which-key)
 
 (provide 'init-subconfigs)
