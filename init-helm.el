@@ -3,8 +3,8 @@
 
 (use-package projectile
   :ensure t
-  :after tramp
   :config
+  (require 'tramp)
   (setq projectile-mode-line
         '(:eval (format " P[%s]"
                         (projectile-project-name))))
