@@ -50,7 +50,6 @@
 
 (use-package helm-projectile
   :ensure t
-  :after helm projectile
   :init
   (helm-projectile-on))
 
