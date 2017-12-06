@@ -1,5 +1,5 @@
 
-(use-package grep-mode
+(use-package grep
   :init
   (progn
     (evil-define-key 'normal grep-mode-map (kbd "C-o") 'evil-jump-backward)
