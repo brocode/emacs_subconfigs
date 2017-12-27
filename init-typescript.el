@@ -1,11 +1,9 @@
 (use-package typescript-mode
   :ensure t
-  :defer t
   :init)
 
 (use-package tide
   :ensure t
-  :after typescript-mode company web-mode
   :init
   (progn
     (defun setup-tide-mode ()
