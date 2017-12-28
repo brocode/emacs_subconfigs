@@ -9,7 +9,6 @@
 (require 'init-helm)
 (require 'init-javascript)
 (require 'init-json)
-(require 'init-linum)
 (require 'init-git)
 (require 'init-markdown)
 (require 'init-powerline)
