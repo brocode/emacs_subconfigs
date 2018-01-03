@@ -1,16 +1,3 @@
-(use-package org-bullets
-  :ensure t
-  :after org
-  :defer t
-  :config
-                                        ; better bullets
-  (font-lock-add-keywords 'org-mode '(("^ +\\([-*]\\) " (0 (prog1 ()
-                                                             (compose-region (match-beginning 1) (match-end
-                                                                                                  1) "•"))))))
-
-                                        ; better header bullets
-  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
-  )
 
 (use-package org
   :ensure t
@@ -54,6 +41,18 @@
   (evil-define-key 'normal org-mode-map (kbd "0") 'org-beginning-of-line)
 
   (evil-define-key 'normal org-mode-map (kbd "-") 'org-cycle-list-bullet)
+  )
+
+(use-package org-bullets
+  :ensure t
+  :config
+                                        ; better bullets
+  (font-lock-add-keywords 'org-mode '(("^ +\\([-*]\\) " (0 (prog1 ()
+                                                             (compose-region (match-beginning 1) (match-end
+                                                                                                  1) "•"))))))
+
+                                        ; better header bullets
+  (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
   )
 
 (provide 'init-org-mode)
