@@ -1,7 +1,16 @@
+
+(use-package rust-mode
+  :defer t
+  :ensure t
+  :after flycheck
+  :init
+  (add-hook 'rust-mode-hook #'flycheck-mode)
+  (add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
+)
+
 (use-package racer
   :defer t
   :ensure t
-  :after company rust
   :init
   (setq racer-cmd (expand-file-name "~/.cargo/bin/racer"))
   (setq rust-rustfmt-bin (expand-file-name "~/.cargo/bin/rustfmt"))
@@ -17,15 +26,6 @@
   (define-key rust-mode-map (kbd "C-]") 'racer-find-definition)
   (evil-define-key 'insert rust-mode-map (kbd "C-n") 'company-select-next)
   (evil-define-key 'insert rust-mode-map (kbd "C-p") 'company-select-previous)
-)
-
-(use-package rust-mode
-  :defer t
-  :ensure t
-  :after flycheck
-  :init
-  (add-hook 'rust-mode-hook #'flycheck-mode)
-  (add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
 )
 
 (use-package flycheck-rust
