@@ -6,15 +6,6 @@
   :init
   (add-hook 'rust-mode-hook #'flycheck-mode)
   (add-to-list 'auto-mode-alist '("\\.toml\\'" . conf-mode))
-  (add-hook 'rust-mode-hook
-            (lambda ()
-              (push '("<=" . ?≤) prettify-symbols-alist)
-              (push '(">=" . ?≥) prettify-symbols-alist)
-              (push '("<-" . ?←) prettify-symbols-alist)
-              (push '("=>" . ?⇒) prettify-symbols-alist)
-              (push '("->" . ?→) prettify-symbols-alist)
-              (push '("!=" . ?≠) prettify-symbols-alist)
-              ))
 )
 
 (use-package racer

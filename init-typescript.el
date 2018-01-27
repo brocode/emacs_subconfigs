@@ -2,12 +2,7 @@
   :ensure t
   :init
   :config
-  (add-hook 'typescript-mode-hook
-            (lambda ()
-              (push '("<=" . ?≤) prettify-symbols-alist)
-              (push '(">=" . ?≥) prettify-symbols-alist)
-              (push '("!=" . ?≠) prettify-symbols-alist)
-              (push '("=>" . ?⇒) prettify-symbols-alist))))
+  )
 
 (use-package tide
   :ensure t
