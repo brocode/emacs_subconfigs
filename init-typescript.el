@@ -1,6 +1,13 @@
 (use-package typescript-mode
   :ensure t
-  :init)
+  :init
+  :config
+  (add-hook 'typescript-mode-hook
+            (lambda ()
+              (push '("<=" . ?≤) prettify-symbols-alist)
+              (push '(">=" . ?≥) prettify-symbols-alist)
+              (push '("!=" . ?≠) prettify-symbols-alist)
+              (push '("=>" . ?⇒) prettify-symbols-alist))))
 
 (use-package tide
   :ensure t
