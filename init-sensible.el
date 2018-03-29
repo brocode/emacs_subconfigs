@@ -144,4 +144,9 @@
   (setq browse-url-browser-function 'browse-url-generic
         browse-url-generic-program "firefox-developer"))
 
+
+; evil change inside consumes a lot of elisp resources
+(setq max-specpdl-size 5000)
+(setq max-lisp-eval-depth 3000)
+
 (provide 'init-sensible)
