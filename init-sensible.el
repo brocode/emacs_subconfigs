@@ -140,9 +140,9 @@
 
 ; use firefox developer
 
-(when (executable-find "firefox-developer")
+(when (executable-find "firefox-developer-edition")
   (setq browse-url-browser-function 'browse-url-generic
-        browse-url-generic-program "firefox-developer"))
+        browse-url-generic-program "firefox-developer-edition"))
 
 
 ; evil change inside consumes a lot of elisp resources
