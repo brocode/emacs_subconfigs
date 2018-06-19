@@ -49,5 +49,6 @@
 (require 'init-grep)
 (require 'init-confmode)
 (require 'init-which-key)
+(require 'init-volatile-highlights)
 
 (provide 'init-subconfigs)
