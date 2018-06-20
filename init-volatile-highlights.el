@@ -1,5 +1,6 @@
 (use-package volatile-highlights
   :ensure t
+  :diminish volatile-highlights-mode
   :init
     (volatile-highlights-mode t)
     (vhl/define-extension 'evil 'evil-paste-after 'evil-paste-before
