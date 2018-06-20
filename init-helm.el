@@ -75,6 +75,16 @@
         :map helm-ag-map
         ("C-w" . backward-kill-word)))
 
+(use-package helm-rg
+  :ensure t
+  :defer t
+  :after helm
+  :init
+  (setq helm-rg-ripgrep-executable (expand-file-name "~/.cargo/bin/rg"))
+  :bind(
+        :map helm-rg-map
+        ("C-w" . backward-kill-word)))
+
 (use-package helm-swoop
   :ensure t
   :defer t
