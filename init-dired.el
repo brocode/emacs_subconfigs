@@ -14,9 +14,9 @@
   (evil-define-key 'normal dired-mode-map "u" 'dired-unmark)
   (evil-define-key 'normal dired-mode-map "U" 'dired-unmark-all-marks)
   (evil-define-key 'normal dired-mode-map "c" 'dired-create-directory)
+  (evil-define-key 'normal dired-mode-map "n" 'evil-search-next)
+  (evil-define-key 'normal dired-mode-map "p" 'evil-search-previous)
 
-  (evil-define-key 'normal dired-mode-map (kbd "SPC SPC") 'helm-M-x)
-
-)
+  (evil-define-key 'normal dired-mode-map (kbd "SPC SPC") 'helm-M-x))
 
 (provide 'init-dired)
