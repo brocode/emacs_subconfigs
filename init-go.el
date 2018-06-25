@@ -7,6 +7,7 @@
         ("M-d" . godef-jump))
   :init
   (progn
+    (evil-set-command-property 'godef-jump :jump t)
     (when (not (getenv "GOPATH")) (setenv "GOPATH" (expand-file-name "~/go/")))
     (add-hook 'go-mode-hook #'flycheck-mode)
     (setq godef-command (expand-file-name "~/go/bin/godef"))))
