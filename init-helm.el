@@ -9,7 +9,7 @@
         '(:eval (format " P[%s]"
                         (projectile-project-name))))
 
-  (projectile-global-mode)
+  (projectile-mode)
 
   (setq projectile-require-project-root nil)
 
