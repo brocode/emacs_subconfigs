@@ -7,5 +7,6 @@
  '(font-lock-builtin-face ((t (:foreground "#483d8b" :weight bold))))
  '(font-lock-keyword-face ((t (:weight bold))))
  '(helm-grep-finish ((t (:foreground "#2e8b57"))))
+ '(font-lock-preprocessor-face ((t (:foreground "#138701"))))
 )
 (provide 'init-theme)
