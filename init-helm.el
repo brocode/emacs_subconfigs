@@ -3,6 +3,8 @@
 
 (use-package projectile
   :ensure t
+  :init
+  (setq projectile-keymap-prefix (kbd "C-c p"))
   :config
   (require 'tramp)
   (setq projectile-mode-line
