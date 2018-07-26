@@ -50,5 +50,6 @@
 (require 'init-confmode)
 (require 'init-which-key)
 (require 'init-volatile-highlights)
+(require 'init-terraform)
 
 (provide 'init-subconfigs)
