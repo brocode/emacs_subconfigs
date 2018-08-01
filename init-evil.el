@@ -53,7 +53,6 @@
 
   (use-package evil-multiedit
     :ensure t
-    :after evil-visualstar
     :config
     ;; For moving between edit regions
     (define-key evil-multiedit-state-map (kbd "C-n") 'evil-multiedit-next)
