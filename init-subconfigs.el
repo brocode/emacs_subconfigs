@@ -51,5 +51,6 @@
 (require 'init-which-key)
 (require 'init-volatile-highlights)
 (require 'init-terraform)
+(require 'init-idris)
 
 (provide 'init-subconfigs)
