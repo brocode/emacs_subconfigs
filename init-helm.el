@@ -3,9 +3,8 @@
 
 (use-package projectile
   :ensure t
-  :init
-  (setq projectile-keymap-prefix (kbd "C-c p"))
   :config
+  (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (require 'tramp)
   (setq projectile-mode-line
         '(:eval (format " P[%s]"
