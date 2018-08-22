@@ -26,6 +26,7 @@
   (define-key rust-mode-map (kbd "C-]") 'racer-find-definition)
   (evil-define-key 'insert rust-mode-map (kbd "C-n") 'company-select-next)
   (evil-define-key 'insert rust-mode-map (kbd "C-p") 'company-select-previous)
+  (evil-set-command-property 'racer-find-definition :jump t)
 )
 
 (use-package flycheck-rust
