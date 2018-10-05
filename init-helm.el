@@ -6,9 +6,7 @@
   :config
   (define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
   (require 'tramp)
-  (setq projectile-mode-line
-        '(:eval (format " P[%s]"
-                        (projectile-project-name))))
+  (setq projectile-mode-line-function (lambda () (format " P[%s]" (projectile-project-name))))
 
   (projectile-mode)
 
