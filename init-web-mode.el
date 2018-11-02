@@ -15,5 +15,11 @@
           (setq web-mode-markup-indent-offset 2)
           (setq web-mode-css-indent-offset 2)
           (setq web-mode-code-indent-offset 2)
-          (setq web-mode-enable-auto-quoting nil))
+          (setq web-mode-enable-auto-quoting nil)
+          (custom-set-faces
+           '(web-mode-jsx-depth-1-face ((t ())))
+           '(web-mode-jsx-depth-2-face ((t ())))
+           '(web-mode-jsx-depth-3-face ((t ())))
+           '(web-mode-jsx-depth-4-face ((t ())))
+           '(web-mode-jsx-depth-5-face ((t ())))))
 (provide 'init-web-mode)
