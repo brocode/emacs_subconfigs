@@ -27,7 +27,7 @@
 (require 'init-restclient)
 (require 'init-dockerfile-mode)
 (require 'init-rainbow-mode)
-(require 'init-spellcheck)
+;(require 'init-spellcheck)
 (require 'init-pretty)
 (require 'init-imenu)
 (require 'init-rainbow-delimiters)
