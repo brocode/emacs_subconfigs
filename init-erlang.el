@@ -1,6 +1,5 @@
 (use-package erlang
   :ensure t
-  :defer t
   :after company  flycheck
   :init
   (require 'flycheck)
