@@ -1,11 +1,10 @@
 (use-package elixir-mode
-  :defer t
   :ensure t)
 
 (use-package alchemist
-  :after elixir-mode
   :ensure t
-  :defer t
-  )
+  :config
+    (define-key alchemist-mode-map (kbd "C-]") 'alchemist-goto-definition-at-point)
+    (define-key alchemist-mode-map (kbd "C-d") 'alchemist-goto-definition-at-point))
 
 (provide 'init-elixir)
