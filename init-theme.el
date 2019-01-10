@@ -8,5 +8,6 @@
  '(font-lock-keyword-face ((t (:weight bold))))
  '(helm-grep-finish ((t (:foreground "#2e8b57"))))
  '(font-lock-preprocessor-face ((t (:foreground "#138701"))))
+ '(sh-heredoc ((t (:foreground "#fc5b0a"))))
 )
 (provide 'init-theme)
