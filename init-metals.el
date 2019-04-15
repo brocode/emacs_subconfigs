@@ -23,6 +23,11 @@
 (use-package lsp-ui
   :ensure t
   :defer t
+  :config
+  (progn
+    (setq lsp-ui-sideline-enable nil)
+    (setq lsp-ui-doc-position 'at-point)
+  )
   :hook (lsp-mode . lsp-ui-mode))
 
 (use-package lsp-scala
@@ -30,6 +35,7 @@
   :demand t
   ;; Optional - enable lsp-scala automatically in scala files
   :hook (scala-mode . lsp))
+(defvar lsp-scala--config-options `(:hover (:enabled t)))
 
 
 (provide 'init-metals)
