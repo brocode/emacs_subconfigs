@@ -4,8 +4,6 @@
 (require 'init-sensible)
 (require 'init-company)
 (require 'init-yasnippet)
-(require 'init-scala)
-(require 'init-ensime)
 (require 'init-helm)
 (require 'init-javascript)
 (require 'init-json)
@@ -52,5 +50,7 @@
 (require 'init-volatile-highlights)
 (require 'init-terraform)
 (require 'init-idris)
+(require 'init-metals)
+
 
 (provide 'init-subconfigs)
