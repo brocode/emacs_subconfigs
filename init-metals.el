@@ -37,5 +37,13 @@
   :hook (scala-mode . lsp))
 (defvar lsp-scala--config-options `(:hover (:enabled t)))
 
+(use-package company-lsp
+  :after lsp-mode
+  :ensure t
+  :defer t
+  :config
+  (push 'company-lsp company-backends)
+)
+
 
 (provide 'init-metals)
