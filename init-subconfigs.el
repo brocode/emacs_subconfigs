@@ -5,6 +5,7 @@
 (require 'init-company)
 (require 'init-yasnippet)
 (require 'init-helm)
+(require 'init-lsp)
 (require 'init-javascript)
 (require 'init-json)
 (require 'init-git)
