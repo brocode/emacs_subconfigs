@@ -1,8 +1,6 @@
 (use-package scala-mode
   :ensure t
-  :mode "\\.s\\(cala\\|bt\\)$"
-  :config
-  (define-key scala-mode-map (kbd "C-]") 'evil-goto-definition))
+  :mode "\\.s\\(cala\\|bt\\)$")
 
 (use-package sbt-mode
   :ensure t
