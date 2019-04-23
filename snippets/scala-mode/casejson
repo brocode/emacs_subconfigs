@@ -2,8 +2,13 @@
 # name: casejson
 # key: casejson
 # --
-case class $1($0)
 
-object $1 {
-  val format$1 = Json.format[$1]
+
+import play.api.libs.json._
+
+case class $1($0) {
+}
+
+case object $1 {
+  implicit val format: OFormat[$1] = Json.format[$1]
 }
