@@ -1,5 +1,7 @@
 (use-package scala-mode
   :ensure t
+  :init
+  (add-hook 'scala-mode-hook #'lsp)
   :mode "\\.s\\(cala\\|bt\\)$")
 
 (use-package sbt-mode
@@ -12,14 +14,6 @@
    'minibuffer-complete-word
    'self-insert-command
    minibuffer-local-completion-map))
-
-
-(use-package lsp-scala
-  :ensure t
-  :demand t
-  ;; Optional - enable lsp-scala automatically in scala files
-  :hook (scala-mode . lsp))
-(defvar lsp-scala--config-options `(:hover (:enabled t)))
 
 
 
