@@ -52,6 +52,7 @@
 (require 'init-terraform)
 (require 'init-idris)
 (require 'init-metals)
+(require 'init-java)
 
 
 (provide 'init-subconfigs)
