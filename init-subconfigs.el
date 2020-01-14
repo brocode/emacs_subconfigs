@@ -53,6 +53,7 @@
 (require 'init-idris)
 (require 'init-metals)
 (require 'init-java)
+(require 'init-kotlin)
 
 
 (provide 'init-subconfigs)
