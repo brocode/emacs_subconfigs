@@ -80,16 +80,6 @@
   :after helm
   :init
   (setq helm-rg-ripgrep-executable (expand-file-name "~/.cargo/bin/rg"))
-  (custom-set-faces
-   '(helm-rg-match-text-face ((t (:foreground "#b00000"))))
-   '(helm-rg-active-arg-face ((t (:foreground "#1e7501"))))
-   '(helm-rg-base-rg-cmd-face ((t (:foreground "#999999"))))
-   '(helm-rg-inactive-arg-face ((t (:foreground "#999999"))))
-   '(helm-rg-colon-separator-ripgrep-output-face ((t (:foreground "#999999"))))
-   '(helm-rg-title-face ((t (:foreground "#9f3cfc"))))
-   '(helm-rg-directory-cmd-face ((t (:foreground "#b00000"))))
-   '(helm-rg-directory-header-face ((t (:foreground "#000000"))))
-   '(helm-rg-file-match-face ((t (:foreground "#3cacfc")))))
   :bind(
         :map helm-rg-map
         ("C-w" . backward-kill-word)))
