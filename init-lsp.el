@@ -1,7 +1,9 @@
 
 (use-package lsp-mode
- :ensure t
- :init (setq lsp-prefer-flymake nil))
+  :ensure t
+  :init
+  (setq lsp-prefer-flymake nil)
+  (setq lsp-completion-provider :capf))
 
 (use-package lsp-ui
   :ensure t
@@ -17,9 +19,5 @@
                                                                                  (lsp-ui-doc-hide)))))
   :hook (lsp-mode . lsp-ui-mode))
 
-(use-package company-lsp
-  :ensure t
-  :config
-  (push 'company-lsp company-backends))
 
 (provide 'init-lsp)
