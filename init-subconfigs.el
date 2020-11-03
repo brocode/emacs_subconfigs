@@ -54,6 +54,7 @@
 (require 'init-metals)
 (require 'init-java)
 (require 'init-kotlin)
+(require 'init-pkgbuild)
 
 
 (provide 'init-subconfigs)
