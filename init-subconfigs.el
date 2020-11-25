@@ -55,6 +55,7 @@
 (require 'init-java)
 (require 'init-kotlin)
 (require 'init-pkgbuild)
+(require 'init-puppet)
 
 
 (provide 'init-subconfigs)
