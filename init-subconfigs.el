@@ -50,6 +50,7 @@
 (require 'init-which-key)
 (require 'init-volatile-highlights)
 (require 'init-terraform)
+(require 'init-dap)
 (require 'init-idris)
 (require 'init-metals)
 (require 'init-java)

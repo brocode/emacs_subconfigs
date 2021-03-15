@@ -10,7 +10,7 @@
   :config
   (progn
     (setq lsp-ui-sideline-enable nil)
-    (setq lsp-ui-doc-position 'at-point)
+    (setq lsp-ui-doc-position 'bottom)
     (evil-define-key 'normal lsp-ui-mode-map (kbd "C-]") 'lsp-find-definition)
     (evil-define-key 'normal lsp-ui-mode-map (kbd "M-d") 'lsp-find-definition)
     (evil-define-key 'normal lsp-ui-mode-map (kbd "C-c d") (lambda () (interactive) (progn
