@@ -1,7 +1,7 @@
-(use-package modus-operandi-theme
+(use-package dracula-theme
   :ensure
   :init
-  (load-theme 'modus-operandi t))
+  (load-theme 'dracula t))
 
 
 (provide 'init-theme)
