@@ -51,39 +51,6 @@
     :ensure t
     :after magit)
 
-  (use-package evil-multiedit
-    :ensure t
-    :config
-    ;; For moving between edit regions
-    (define-key evil-multiedit-state-map (kbd "C-n") 'evil-multiedit-next)
-    (define-key evil-multiedit-state-map (kbd "C-p") 'evil-multiedit-prev)
-    (define-key evil-multiedit-insert-state-map (kbd "C-n") 'evil-multiedit-next)
-    (define-key evil-multiedit-insert-state-map (kbd "C-p") 'evil-multiedit-prev)
-                                        ; multiedit
-
-    ;; Highlights all matches of the selection in the buffer.
-    (define-key evil-visual-state-map "R" 'evil-multiedit-match-all)
-
-    ;; Match the word under cursor (i.e. make it an edit region). Consecutive
-    ;; presses will incrementally add the next unmatched match.
-    (define-key evil-normal-state-map (kbd "M-J") 'evil-multiedit-match-and-next)
-    ;; Match selected region.
-    (define-key evil-visual-state-map (kbd "M-J") 'evil-multiedit-match-and-next)
-
-
-    ;; Restore the last group of multiedit regions.
-    (define-key evil-visual-state-map (kbd "C-M-j") 'evil-multiedit-restore)
-
-    ;; RET will toggle the region under the cursor
-    (define-key evil-multiedit-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
-
-    ;; ...and in visual mode, RET will disable all fields outside the selected
-    ;; region
-    (define-key evil-visual-state-map (kbd "RET") 'evil-multiedit-toggle-or-restrict-region)
-
-    ;; Allows you to invoke evil-multiedit with a regular expression
-    (evil-ex-define-cmd "ie[dit]" 'evil-multiedit-ex-match))
-
   (use-package move-text
     :ensure t
     :config
